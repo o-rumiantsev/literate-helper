@@ -1,0 +1,26 @@
+{
+  "name": "literate-helper",
+  "version": "0.1.0",
+  "description": "Utility for game development",
+  "author": "o-rumiantsev",
+  "homepage": "https://github.com/o-rumiantsev/literate-helper#readme",
+  "bugs": "https://github.com/o-rumiantsev/literate-helper/issues",
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/o-rumiantsev/literate-helper.git"
+  },
+  "scripts": {
+    "build": "webpack",
+    "start": "node server/ & webpack --watch & live-server --watch=src/* --port=8080"
+  },
+  "dependencies": {
+    "phaser": "^3.19.0"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.7"
+  }
+}

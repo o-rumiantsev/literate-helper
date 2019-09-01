@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Platformer Game Builder</title>
+    <script src="dist/app.js"></script>
+    <style type="text/css">
+        html, body {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div style="display: flex">
+        <div id="phaser-game"></div>
+
+        <div id="metadata">
+            <div>
+                <label>Position: </label><span id="position"></span>
+            </div>
+            <div>
+                <label>Velocity: </label><input id="velocity" type="text" value="200"/>
+            </div>
+            <div>
+                <label>Zoom: </label><input id="zoom" type="text" value="1"/>
+            </div>
+            <div>
+                <button id="add-button">Add</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="radio-textures"></div>
+</body>
+</html>
