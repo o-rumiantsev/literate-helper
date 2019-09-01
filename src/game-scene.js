@@ -10,6 +10,10 @@ export default class GameScene extends Phaser.Scene {
     const addButton = document.getElementById('add-button');
     addButton.onclick = () => this.addTexture();
 
+    document.addEventListener('keydown', e => {
+      if (e.code === 'Space') this.addTexture();
+    });
+
     this.position = document.getElementById('position');
     this.velocity = document.getElementById('velocity');
     this.zoom = document.getElementById('zoom');
